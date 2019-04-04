@@ -1,0 +1,15 @@
+{
+  "name": "fa-pro-netlify-test",
+  "version": "0.0.1",
+  "author": {
+    "name": "Brian Zelip",
+    "email": "bzelip@gmail.com"
+  },
+  "description": "Sandbox for getting Font Awesome pro license working on netlify via npm.",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
