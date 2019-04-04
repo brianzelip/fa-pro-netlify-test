@@ -1,8 +1,5 @@
 <template>
   <header>
-    <FontAwesomeIcon :icon="icon('futbolL')"></FontAwesomeIcon>
-    <FontAwesomeIcon :icon="icon('futbolR')"></FontAwesomeIcon>
-    <FontAwesomeIcon :icon="icon('slice')"></FontAwesomeIcon>
     <FontAwesomeIcon :icon="icon('heart')"></FontAwesomeIcon>
     <FontAwesomeIcon :icon="icon('laugh')"></FontAwesomeIcon>
     <FontAwesomeIcon :icon="icon('meh')"></FontAwesomeIcon>
@@ -12,10 +9,6 @@
 
 <script>
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import {
-  faFutbol as falFutbol,
-  faPizzaSlice
-} from "@fortawesome/pro-light-svg-icons";
 import {
   faHeart,
   faLaughBeam,
@@ -31,9 +24,6 @@ export default {
   methods: {
     icon(i) {
       const fa = {
-        futbolL: falFutbol,
-        futbolR: farFutbol,
-        slice: faPizzaSlice,
         heart: faHeart,
         laugh: faLaughBeam,
         meh: faMeh,
