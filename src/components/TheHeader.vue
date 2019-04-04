@@ -1,5 +1,7 @@
 <template>
   <header>
+    <FontAwesomeIcon :icon="icon('bomb')"></FontAwesomeIcon>
+    <FontAwesomeIcon :icon="icon('bong')"></FontAwesomeIcon>
     <FontAwesomeIcon :icon="icon('heart')"></FontAwesomeIcon>
     <FontAwesomeIcon :icon="icon('laugh')"></FontAwesomeIcon>
     <FontAwesomeIcon :icon="icon('meh')"></FontAwesomeIcon>
@@ -9,6 +11,7 @@
 
 <script>
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { faBomb, faBong } from "@fortawesome/pro-light-svg-icons";
 import {
   faHeart,
   faLaughBeam,
@@ -24,6 +27,8 @@ export default {
   methods: {
     icon(i) {
       const fa = {
+        bomb: faBomb,
+        bong: faBong,
         heart: faHeart,
         laugh: faLaughBeam,
         meh: faMeh,
