@@ -17,7 +17,7 @@ Here's the [Netlify private modules gist](https://gist.github.com/biilmann/0b225
 
 2. A project-specific build environment variable configured in the project's netlify dashboard, named `NPM_TOKEN`
 
-3. Since the .npmrc file above won't work locally, you have to set up the font-awesome details via the [per-user configuration file](https://docs.npmjs.com/misc/config#npmrc-files) approach, via the [font-awesome global set up](https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers#installing-pro), ie:
+3. Since the .npmrc file above won't work for local development, you have to set up the font-awesome details via the [per-user configuration file](https://docs.npmjs.com/misc/config#npmrc-files) approach, via the [font-awesome global set up](https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers#installing-pro), ie:
 
 ```
 npm config set "@fortawesome:registry" https://npm.fontawesome.com/ && \
