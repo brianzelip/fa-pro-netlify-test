@@ -5,7 +5,9 @@
     <FontAwesomeIcon :icon="icon('heart')"></FontAwesomeIcon>
     <FontAwesomeIcon :icon="icon('laugh')"></FontAwesomeIcon>
     <FontAwesomeIcon :icon="icon('meh')"></FontAwesomeIcon>
-    <FontAwesomeIcon :icon="icon('DO')"></FontAwesomeIcon>
+    <FontAwesomeIcon :icon="icon('acorn')"></FontAwesomeIcon>
+    <FontAwesomeIcon :icon="icon('axeBattle')"></FontAwesomeIcon>
+    <FontAwesomeIcon :icon="icon('dagger')"></FontAwesomeIcon>
   </header>
 </template>
 
@@ -17,8 +19,13 @@ import {
   faLaughBeam,
   faMeh,
   faFutbol as farFutbol
-} from "@fortawesome/free-regular-svg-icons";
-import { faDigitalOcean } from "@fortawesome/free-brands-svg-icons";
+} from "@fortawesome/pro-regular-svg-icons";
+
+import {
+  faAcorn,
+  faAxeBattle,
+  faDagger
+} from "@fortawesome/pro-solid-svg-icons";
 
 export default {
   components: {
@@ -32,7 +39,9 @@ export default {
         heart: faHeart,
         laugh: faLaughBeam,
         meh: faMeh,
-        DO: faDigitalOcean
+        acorn: faAcorn,
+        axeBattle: faAxeBattle,
+        dagger: faDagger
       };
       return fa[`${i}`];
     }
